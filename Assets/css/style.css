@@ -1,0 +1,26 @@
+#hero-image {
+    background: rgba(0, 0, 0, 0.5) url("../images/guests-arriving.png");
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#bkn {
+    background-color: #ff6c2d;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.card-img-top {
+  height: 400px;
+    object-fit: cover;
+}
+
+#tour{
+     background: rgba(0, 0, 0, 0.5) url("../images/poolside.png");
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
