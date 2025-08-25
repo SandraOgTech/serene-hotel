@@ -1,26 +1,78 @@
+html,
+body {
+  overflow-x: hidden;
+  /* Prevent horizontal scrolling */
+}
+
 #hero-image {
-    background: rgba(0, 0, 0, 0.5) url("../images/guests-arriving.png");
-    background-blend-mode: darken;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
+  background: rgba(0, 0, 0, 0.5) url("../images/guests-arriving.png");
+  background-blend-mode: darken;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 #bkn {
-    background-color: #ff6c2d;
-    border-radius: 30px;
-    margin-top: 10px;
+  background-color: #ff6c2d;
+  border-radius: 30px;
+  margin-top: 10px;
 }
 
 .card-img-top {
   height: 400px;
-    object-fit: cover;
+  object-fit: cover;
 }
 
-#tour{
-     background: rgba(0, 0, 0, 0.5) url("../images/poolside.png");
-    background-blend-mode: darken;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 80vh;
+#tour {
+  background: rgba(0, 0, 0, 0.5) url("../images/poolside.png");
+  background-blend-mode: darken;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  max-width: 100%;
+  margin-top: 10rem;
+}
+
+
+#tour img {
+  max-width: 100%;
+  /* Force image to stay inside viewport */
+  height: auto;
+  display: block;
+}
+
+.footer {
+  height: 400px;
+  /* no forced 400px */
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.footer img {
+  max-width: 40px;
+  height: auto;
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .footer img {
+    max-width: 30px;
+    /* smaller on md+ screens */
+    margin-top: 0;
+    /* prevent overflow */
+  }
+}
+
+@media (max-width: 768px){
+
+.orange-box .container {
+  margin-top: 0;
+}
+}
+
+.orange-box .container {
+  position: relative;
+  z-index: 2;
+  margin-top: -50px;  /* overlap on large screens */
 }
